@@ -1,0 +1,222 @@
+:root {
+  --body-background-color: #256eff;
+  --option-color: #7898ff;
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--color-white);
+}
+
+.navbar-container {
+  padding: 2rem;
+}
+
+.navbar-link:hover {
+  border-bottom: 1px solid var(--color-white);
+}
+
+.header {
+  max-width: 50%;
+  margin: 2rem auto;
+  font-size: var(--text-xl);
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  text-decoration: none;
+  width: 20rem;
+  height: 10rem;
+  border-radius: var(--border-lg);
+  background-color: var(--color-white);
+  position: relative;
+  box-shadow: var(--shadow-md);
+}
+
+.category-js {
+  background: rgb(180, 191, 0);
+  background: linear-gradient(
+    56deg,
+    rgba(180, 191, 0, 1) 0%,
+    rgba(255, 243, 0, 1) 60%
+  );
+}
+
+.category-react {
+  background: #4d5dfb;
+  background: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);
+}
+
+.category-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  color: var(--color-white);
+}
+
+.category-name {
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+}
+
+.category-level {
+  font-size: var(--text-xs);
+  padding: 4px;
+  margin-left: 4px;
+  background-color: var(--body-background-color);
+  border-radius: var(--border-sm);
+  font-weight: var(--font-semibold);
+}
+
+.category-icon {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  font-size: 5rem;
+}
+
+.rules-card {
+  max-width: 50%;
+  margin: 1rem auto;
+  background-color: var(--option-color);
+  font-weight: var(--font-medium);
+  font-size: var(--text-regular);
+  border-radius: var(--border-lg);
+  padding: 1rem 0;
+}
+
+.rules-list {
+  padding: 2rem 4rem;
+}
+.list-rule-item {
+  padding: 10px 0;
+}
+
+.btn {
+  margin: 8px 0;
+  display: flex;
+  /* The button component had a 2px margin, inorder to override that */
+}
+
+.start-quiz-btn {
+  display: flex;
+  text-decoration: none;
+  max-width: 10rem;
+  margin: auto;
+}
+
+.quiz-container {
+  max-width: 50%;
+  margin: 1rem auto 1rem auto;
+}
+
+.quiz-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quiz-timer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: var(--text-xl);
+  margin: 1rem;
+  border: 2px solid var(--color-white);
+  padding: 12px;
+  font-weight: var(--font-semibold);
+  border-radius: var(--border-rounded);
+}
+
+.quiz-question-container {
+  margin: 2rem 0;
+}
+.quiz-question {
+  font-size: var(--text-regular);
+  font-weight: var(--font-medium);
+  margin-bottom: 1rem;
+}
+
+.quiz-option-list {
+  list-style-type: none;
+}
+
+.quiz-option{
+    background-color: var(--option-color);
+    padding: 1rem;
+    margin: 10px 0;
+    border-radius: var(--border-sm);
+}
+
+.option-correct{
+    background-color: var(--color-success)
+}
+
+.option-wrong{
+    background-color: var(--color-danger);
+}
+
+/* UTILITY CLASSES */
+
+.format-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.my-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* PREVIW CLASSES */
+/* only used for testing not to go in prod */
+.preview-links{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    gap: 10px;
+}
+
+.preview-link{
+    border-bottom: 1px solid var(--color-white);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    max-width: 90%;
+    font-size: var(--text-lg);
+  }
+
+  .category-container {
+    margin-top: 3rem;
+  }
+
+  .rules-card {
+    max-width: 90%;
+  }
+
+  .quiz-container {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .quiz-timer {
+    font-size: var(--text-md);
+    padding: 8px;
+  }
+}
