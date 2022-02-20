@@ -104,9 +104,9 @@ body {
 }
 
 .btn {
-  margin: 8px 0;
+  margin: 8px 0; /* The button component had a 2px margin, inorder to override that */
   display: flex;
-  /* The button component had a 2px margin, inorder to override that */
+  justify-content: center;
 }
 
 .start-quiz-btn {
