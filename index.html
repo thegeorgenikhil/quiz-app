@@ -4,20 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://flow-css.netlify.app/components.css" />
     <link rel="stylesheet" href="./styles.css" />
     <script
       src="https://kit.fontawesome.com/a7cf34d87a.js"
       crossorigin="anonymous"
     ></script>
-    <title>QuizUp</title>
+    <title>QuizUp - Home</title>
   </head>
   <body>
-    <script src="../../index.js"></script>
+    <nav class="navbar-container">
+      <div class="navbar-brand"><a href="/" class="format-link">QuizUp</a></div>
+      <ul class="navbar-group">
+        <li class="navbar-item">
+          <a href="" class="navbar-link">Leaderboard</a>
+        </li>
+        <li class="navbar-item"><a href="./pages/rules.html" class="navbar-link">Rules</a></li>
+        <li class="navbar-item">
+          <a href="" class="navbar-link"><i class="fas fa-user"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <p class="font-bold text-center">Find Out If You Are Really Good at Javascript🤯</p>
+    </header>
+    <main class="category-container">
+      <a href="./pages/rules.html" class="category-card category-js">
+        <div class="category-details">
+          <div class="category-name">Javascript</div>
+          <div class="category-level">Level-1</div>
+          <div class="category-icon"><i class="fab fa-js"></i></div>
+        </div>
+      </a>
+      <a href="./pages/rules.html" class="category-card category-react">
+        <div class="category-details">
+          <div class="category-name">ReactJS</div>
+          <div class="category-level">Level-1</div>
+          <div class="category-icon"><i class="fab fa-react"></i></div>
+        </div>
+      </a>
+    </main>
   </body>
 </html>
