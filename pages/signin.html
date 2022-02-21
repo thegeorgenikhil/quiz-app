@@ -15,7 +15,7 @@
       src="https://kit.fontawesome.com/a7cf34d87a.js"
       crossorigin="anonymous"
     ></script>
-    <title>QuizzUp - Javascript</title>
+    <title>QuizzUp - Signin</title>
   </head>
   <body>
     <nav class="navbar-container">
@@ -37,35 +37,45 @@
       </ul>
     </nav>
     <header class="header">
-      <p class="text-lg font-bold text-center">Topic: Javascript</p>
+      <p class="text-xl font-bold text-center">Sign In🔐</p>
     </header>
-    <main class="quiz-container">
-      <div class="quiz-info-container">
-        <p>
-          Question: <span class="font-bold">1</span>/<span class="font-bold"
-            >10</span
-          >
-        </p>
-        <p>Score: <span class="font-bold">0</span></p>
+    <div class="signup-card">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter Username:"
+          name="username"
+        />
       </div>
-      <div class="quiz-timer">45</div>
-      <div class="quiz-question-container">
-        <div class="quiz-question">
-          A variable in Javascript is declared with which of the following
-          keyword?
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="input"
+          placeholder="Enter Password: "
+          name="password"
+        />
+      </div>
+      <div class="flex justify-between text-xs align-center">
+        <div class="flex align-center">
+          <input type="checkbox" name="remember-me" />
+          <label for="remember-me">&#160;Remember Me</label>
         </div>
-        <ul class="quiz-option-list">
-          <li class="quiz-option">new</li>
-          <li class="quiz-option">int</li>
-          <li class="quiz-option">string</li>
-          <li class="quiz-option">var</li>
-        </ul>
+        <a
+          href="./forgot.html"
+          class="color-white format-link underline-onhover"
+          >Forgot Password?</a
+        >
       </div>
-    </main>
-
-    <div class="preview-links">
-      <a href="./answer.html" class="preview-link">Answer</a>
-      <a href="./result.html" class="preview-link">Result</a>
+      <a href="#" class="format-link">
+        <button class="btn btn-block bg-info">Sign In</button>
+      </a>
+      <p class="text-xs text-center">
+        New to QuizzUp? Sign-up
+        <a href="./signup.html" class="color-white">here</a>
+      </p>
     </div>
   </body>
 </html>

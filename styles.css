@@ -151,19 +151,27 @@ body {
   list-style-type: none;
 }
 
-.quiz-option{
-    background-color: var(--option-color);
-    padding: 1rem;
-    margin: 10px 0;
-    border-radius: var(--border-sm);
+.quiz-option {
+  background-color: var(--option-color);
+  padding: 1rem;
+  margin: 10px 0;
+  border-radius: var(--border-sm);
 }
 
-.option-correct{
-    background-color: var(--color-success)
+.option-correct {
+  background-color: var(--color-success);
 }
 
-.option-wrong{
-    background-color: var(--color-danger);
+.option-wrong {
+  background-color: var(--color-danger);
+}
+
+.signup-card {
+  background-color: var(--option-color);
+  max-width: 40%;
+  margin: auto;
+  padding: 1rem 2rem;
+  border-radius: var(--border-md);
 }
 
 /* UTILITY CLASSES */
@@ -173,27 +181,46 @@ body {
   color: inherit;
 }
 
-.my-auto{
-    margin-left: auto;
-    margin-right: auto;
+.my-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start{
+  align-items: flex-start;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.underline-onhover:hover{
+  text-decoration: underline;
+}
 
 /* PREVIW CLASSES */
 /* only used for testing not to go in prod */
-.preview-links{
-    position: fixed;
-    display: flex;
-    bottom: 0;
-    left: 0;
-    margin: 1rem;
-    gap: 10px;
+.preview-links {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+  gap: 10px;
 }
 
-.preview-link{
-    border-bottom: 1px solid var(--color-white);
-    color: var(--color-white);
-    text-decoration: none;
+.preview-link {
+  border-bottom: 1px solid var(--color-white);
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -218,5 +245,9 @@ body {
   .quiz-timer {
     font-size: var(--text-md);
     padding: 8px;
+  }
+
+  .signup-card {
+    max-width: 80%;
   }
 }
